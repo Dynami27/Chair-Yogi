@@ -19,12 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        window?.makeKeyAndVisible()
     //making view controller
         
-       let flowLayout = UICollectionViewFlowLayout()
-        let customCollectionViewControllerExercises = CustomCollectionViewController( collectionViewLayout: flowLayout)
-        //creating flowLayout and customCollectionViewController.
-        
-       window?.rootViewController = UINavigationController(rootViewController: customCollectionViewControllerExercises)
-         
+        let homeController = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
+       window?.rootViewController = UINavigationController(rootViewController: homeController)
+        //setting up collectionViewController. 
         return true
     }
 
